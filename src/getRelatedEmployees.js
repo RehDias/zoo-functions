@@ -1,7 +1,11 @@
 const data = require('../data/zoo_data');
 
 function isManager(id) {
-  // seu código aqui
+  const getManagers = data.employees.filter((obj) => {
+    const itIsManager = obj.managers.includes(id);
+    return itIsManager;
+  });
+  return getManagers.length > 0;
 }
 
 function getRelatedEmployees(managerId) {
