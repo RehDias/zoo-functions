@@ -9,7 +9,15 @@ function isManager(id) {
 }
 
 function getRelatedEmployees(managerId) {
-  // seu código aqui
+  const responsible = data.employees.filter((obj) => {
+    if (obj.managers.includes(managerId)) { return obj; }
+    return null;
+  });
+  const isResponsible = responsible.map((element) => `${element.firstName} ${element.lastName}`);
+  if (isManager(managerId) === false) {
+    throw new Error('O id inserido não é de uma pessoa colaboradora gerente!');
+  }
+  return isResponsible;
 }
 
 module.exports = { isManager, getRelatedEmployees };
