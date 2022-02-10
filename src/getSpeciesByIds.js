@@ -1,9 +1,12 @@
 const data = require('../data/zoo_data');
 
-function getSpeciesByIds(ids, ...arg) {
+function getSpeciesByIds(...ids) {
   if (ids == null) { return []; }
-  const speciesIds = data.species.filter((obj) => obj.id === ids || obj.id === arg);
-  return speciesIds;
-}
+  const animals = ids.map((element) => {
+    const speciesId = data.species.find((obj) => obj.id === element);
+    return speciesId;
+  });
+  return animals;
+} // referência projeto Djheffeson e mentoria zoo functions;
 
 module.exports = getSpeciesByIds;
