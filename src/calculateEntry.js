@@ -11,10 +11,10 @@ function calculateEntry(entrants) {
   if (entrants === undefined || Object.keys(entrants).length === 0) { return 0; }
   const values = data.prices;
   const pessoas = countEntrants(entrants);
-  return Object.entries(pessoas).reduce((acc, [type, count]) => { 
+  return Object.entries(pessoas).reduce((acc, [type, count]) => {
     const totalValues = values[type] * count;
     return totalValues + acc;
-   }, 0)
+  }, 0);
 } // Referência: Ajuda da Ellen Santos;
 
 module.exports = { calculateEntry, countEntrants };
