@@ -6,8 +6,8 @@ const employeesInfo = employees.map((result) => {
     id: result.id,
     fullName: `${result.firstName} ${result.lastName}`,
     species: result.responsibleFor.map((id) => species.find((animal) => id === animal.id).name),
-    locations: result.responsibleFor.map((id) => species.find((animal) => id === animal.id)
-      .location),
+    locations: result.responsibleFor.map((id) => species.find((animal) =>
+      id === animal.id).location),
   };
   return objInfo;
 });
