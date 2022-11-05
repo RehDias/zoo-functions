@@ -10,6 +10,10 @@
 
 <h3>Aplicação</h3>
 
-![zoo_functions1](https://user-images.githubusercontent.com/91297277/200133715-6aff5dc1-e599-442a-bbb2-9bd449f6d0a7.png)
+<img src="https://user-images.githubusercontent.com/91297277/200133776-1ff398a9-38e3-4a2e-b324-f3251d7adea8.png" alt="" width="750" />
 
-![zoo_functions2](https://user-images.githubusercontent.com/91297277/200133721-a03a93a8-ef87-42d9-b223-36f0138f9298.png)
+<img src="https://user-images.githubusercontent.com/91297277/200133784-b9822695-16a7-4861-a311-7d40b685de00.png" alt="" width="750" />
+
+<img src="https://user-images.githubusercontent.com/91297277/200133788-a44c51f0-f946-4e5b-a1c7-01ae57ad06cf.png" alt="" width="750" />
+
+<img src="https://user-images.githubusercontent.com/91297277/200133791-929bf4af-b8d7-4a49-959e-828bb7bf3a40.png" alt="" width="750" />
